@@ -1,0 +1,30 @@
+PROCEDURE dot_product(var v1 : ARRAY_OF INTEGER, var v2 :ARRAY_OF INTEGER )
+VAR
+    PS,i,j,n,m : integer;
+
+BEGIN
+
+REPEAT
+    write("donnez la lengeur de la vacteur 1 :");
+    read(n);
+    write("donnez la lengeur de la vacteur 2 :");
+    read(m);
+UNTIL (n === m)
+    ps := 0;
+    FOR i FROM 0 TO n DO
+       FOR j FROM 0 TO m DO
+       Ps := PS + (v1[i]*v2[j]);
+       END_FOR
+    END_FOR
+END
+
+
+ALGORITHM orthogonaux
+VAR
+    v1 :  ARRAY_OF INTEGER;
+    v2 :  ARRAY_OF INTEGER;
+    PS,i,j,n,m :integer;
+BEGIN
+    if(dot_product(v1,v2) == 0)
+    write("le vacteur v1 et le vecteur v2 sont deux vecteurs orthogonaux")
+END
